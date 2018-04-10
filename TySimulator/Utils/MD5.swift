@@ -18,8 +18,8 @@ extension String {
         CC_MD5(str!, strLen, result)
 
         let hash = NSMutableString()
-        for i in 0 ..< digestLen {
-            hash.appendFormat("%02x", result[i])
+        for item in 0 ..< digestLen {
+            hash.appendFormat("%02x", result[item])
         }
 
         result.deinitialize()
